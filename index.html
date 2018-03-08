@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ECO-Voiturage</title>
+		<meta charset="utf-8">
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		
+		<!-- Material Design for Bootstrap fonts and icons -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+	</head>
+	<body>
+		<div class="main-wrapper">
+			<div class="banner-wrapper">
+				<img style="border-radius:90px;"src="res/ecologo.png">
+			</div>
+			<div class="log-wrapper">
+				<div class="log_screen_content">
+					<input id='btn_login' type='button' class='button_dark' value="Log in">
+					<br>
+					<div id="login_wrapper" style="display:inline-block">
+						<form action="pro" id="login_form" method='POST'>
+							<input class="form-control" placeholder="Mail address ..." type="text" id="mail">
+							<input class="form-control" placeholder="Password ..." type="password" id="pass" autocomplete="new-password">
+						</form>
+						<br>
+						<input id="connect" type='button' class='btn button_light' value="Connexion">
+						<input id="message_log" type='button' class='button_error' value="Invalid login or password">
+						<br>
+						<a href='javascript:void(0)' id="fgtpass">Recover password</a>
+					</div>	
+					<hr>
+					<input id='btn_register' type='button' class=' btn button_dark' value="Create an account">
+					<br>
+					<div id="register_wrapper" style="display:none">
+						<input class="form-control" id="log_register" placeholder="Login ..." type="text" autocomplete="new-password">
+						<input class="form-control" id="mail1" placeholder="Mail address ..." type="text" autocomplete="new-password">
+						<input class="form-control" id="mail2" placeholder="Confirm mail address ..." type="text" autocomplete="new-password">
+						<input class="form-control" id="pass1" placeholder="Password ..." type="password" autocomplete="new-password">
+						<input class="form-control" id="pass2" placeholder="Confirm password ..." type="password" autocomplete="new-password">
+						<br>
+						<input id="register" type='button' class='button_light' value="Register">
+						<input id="message_reg" type='button' class='button_error'>
+					</div>
+				</div>
+			</div>
+		</div>
+			<!-- JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type='text/javascript'>	$(document).ready(init_index);</script>
+	</body>
+</html>

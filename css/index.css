@@ -1,0 +1,172 @@
+body{
+	padding: 24px 0 0 0;
+	position:absolute;
+	background-color: #34495e;
+    top:0;
+    left:0;
+    bottom:0;
+    overflow:auto;
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+	width: 100%;
+}
+
+.main-wrapper{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.banner-wrapper{
+	margin-left: auto;
+	margin-right: auto;
+	width: 360px;
+}
+
+.log-wrapper{
+	margin-left: auto;
+	margin-right: auto;
+	width: 460px;
+}
+
+form{
+  margin: 0 !important;
+}
+
+.log_screen_content{
+  	display: inline-block;
+  	margin: 20px;
+  	padding: 8px;
+  	border-radius: 4px;
+    width: 420px;
+  	background-color: rgba(255,255,255,0.7);
+  	text-align: center;
+  	font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    color: #0000000;
+}
+
+.button_error{
+  display:none;
+  background-color: rgba(255,255,255,1);
+	border:0px;
+	border-radius: 4px;
+  border: 2px solid;
+  border-color: #FF1A1A;
+  color: #FF1A1A;
+	font-family: Arial;
+	padding: 10px 20px 10px 20px;
+  margin-bottom: 10px;
+	text-decoration: none;
+}
+
+.button_light{
+  background-color: #ffffff;
+	border:0px;
+  color:#CB8657;
+	border-radius: 4px;
+  border: 2px solid;
+  border-color: #CB8657;
+	font-family: Arial;
+	padding: 10px 20px 10px 20px;
+  margin-bottom: 10px;
+	text-decoration: none;
+}
+
+.button_dark{
+  background: linear-gradient(160deg, #CCCC6A 0%, #CB8657 60%);
+	border:0px;
+	border-radius: 4px;
+	font-family: Arial;
+	padding: 10px 20px 10px 20px;
+  margin-bottom: 10px;
+	text-decoration: none;
+}
+
+.log_screen_content input[type=text],.log_screen_content input[type=password]{
+	max-width: 320px;
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 2px;
+  padding-left: 20px;
+}
+
+.log_screen_content input[type=text]::-webkit-input-placeholder, .log_screen_content input[type=password]::-webkit-input-placeholder{ /* WebKit, Blink, Edge */
+   color:    #fff;
+}
+.log_screen_content input[type=text]:-moz-placeholder, .log_screen_content input[type=password]:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  1;
+}
+.log_screen_content input[type=text]::-moz-placeholder,  .log_screen_content input[type=password]::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+}
+.log_screen_content input[type=text]:-ms-input-placeholder, .log_screen_content input[type=password]:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #fff;
+}
+
+#log_block hr{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#last{
+	width: 360px;
+	font-size: 14px;
+}
+
+#last td{
+	display: inline-block;
+  padding: 2px;
+}
+
+#last p{
+  margin: 0;
+}
+
+#last img{
+	width: 48px;
+	height: 48px;
+	margin: 5px 5px 5px 5px;
+	border-radius:5px;
+  border: 2px solid white;
+}
+
+#last tr{
+	display: inline-block;
+	width:100%;
+	border-radius: 2px;
+	color: #000000
+}
+
+#map{
+  position: absolute;
+  top: 100px;
+  left: 0;
+  height: 90%;
+  width: 100%;
+  z_index:0;
+}
+
+a{
+	text-decoration: underline !important;
+	color: #CB8657 !important;
+}
+
+.direction_input{
+  margin: 30px;
+  padding: 10px;
+}
+
+.input_place{
+  border-radius: 0px;
+  width: 120px;
+  height: 15px;
+  color: rgb(0, 0, 0);
+}
+
+.bold{
+	font-weight:bold;
+}
