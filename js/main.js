@@ -1,4 +1,4 @@
-let key = "AIzaSyDZe0varc34YAvx57ffHuWKq0V1EParir0";
+var key = "AIzaSyDZe0varc34YAvx57ffHuWKq0V1EParir0";
 
 function initMap(){
   var mapOptions = {
@@ -40,6 +40,9 @@ function initMap(){
 }
 
 function init_index(){
+    $('#btn-log-wrapper').on('click',function(){
+        $('#log-wrapper').toggleClass('hidden');
+    });
 	$('#btn_login').on('click',function(){
 		console.log($('#login_wrapper').css('display'));
 		if($('#login_wrapper').css('display') == 'none'){
