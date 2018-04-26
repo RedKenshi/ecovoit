@@ -40,7 +40,7 @@
 					</li>
 					<hr>
 					<li>
-						<a id="btn-createtravel">PROPOSER UN TRAJET</a>
+						<a href="" id="back">PROPOSER UN TRAJET</a>
 					</li>
 					<li>
 						<a href="" id="back">RECHERCHER UN TRAJET</a>
@@ -61,40 +61,9 @@
 					</li>
 				</ul>
 			</div>
-			<div id="map">
-			</div>
-		</div>
-		<div id="contextWrapper" style="display:none;">
-			<li>
-				<a id='addRide'>PARTIR D'ICI</a>
-			</li>
-			<li>
-				<a id='addRide'>SE RENDRE ICI</a>
-			</li>
-		</div>
-		<div id="log-wrapper" class="hidden">
-			<div class="log_screen_content">
-				<input id='btn_login' type='button' class='btn button_dark' value="Log in">
-				<br>
-				<div id="login_wrapper" style="display:inline-block">
-				
-					<form action="login" id="login_form" method='post'>
-						<fieldset>
-							<input class="form-control textfield" placeholder="Mail address ..." type="email" name="email" value="${form.email}" id="mail">
-							<input class="form-control textfield" placeholder="Password ..." type="password" value="" name="pwd" id="pass" autocomplete="new-password">
-						<br>
-					<input id="connect" type='submit' class='btn' value="Connexion">
-						</fieldset>
-					</form>
-					
-					
-				</div>
-				<hr>
-				<input id='btn_register' type='button' class='btn button_dark' value="Create an account">
-				<br>
-				<div id="register_wrapper" style="display:none">
-					<form method="post" action="register">
-		           		<fieldset>
+			<div id="main_wrapper">
+				<form method="post" action="register">
+			           <fieldset>
 							<input class="form-control textfield" id="firstname" name="prenom" value="${form['prenom']}" placeholder="Prenom ..." type="text" autocomplete="new-password">
 							<span class="erreur">${erreurs['email']}</span>
 							<input class="form-control textfield" name="name" value="${form['name']}" placeholder="Nom ..." type="text" autocomplete="new-password">
@@ -106,28 +75,8 @@
 							<br>
 							<input id="register" type='submit' class='btn' value="Enregistrement">
 							<p class="info">${actionMessage}</p>
-						</fieldset>
-	        		</form>
-				</div>
-			</div>
-		</div>
-		
-		
-		<div id="createtravel-wrapper" class="hidden">
-			<div class="createtravel_screen_content">
-				<div id="createtravel_wrapper">
-					<form method="post" action="createtravel">
-	            	<fieldset>
-						<input class="form-control textfield" id="origin" placeholder="Source ..." type="text" autocomplete="new-password">
-						<span class="erreur">${erreurs['email']}</span>
-						<input class="form-control textfield" id="destination"  placeholder="Destination ..." type="text" autocomplete="new-password">
-						<span class="erreur">${erreurs['name']}</span>
-						<br>
-						<input id="createtravel" type='submit' class='btn' value="Proposer">
-						<p class="info">${actionMessage}</p>
-						</fieldset>
-	        		</form>
-				</div>
+					</fieldset>
+			    </form>
 			</div>
 		</div>
 	</body>
@@ -136,9 +85,6 @@
 	
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-	<script type='text/javascript'>	$(document).ready(init_index);</script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZe0varc34YAvx57ffHuWKq0V1EParir0&libraries=places&callback=initMap"></script>
-	<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLzZs3n8WoCu_ViJg-9CifSxjtfU5ca8M&libraries=places&callback=initMap"></script>-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </html>

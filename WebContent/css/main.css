@@ -195,11 +195,62 @@ hr{
 /////// CONTENT WRAPPER PART ///////
 //////////////////////////////////*/
 
+.contextWrapperToggled{
+  display: block !important;
+  z-index: 4;
+  position: absolute;
+}
+
+#contextWrapper li {
+    line-height: 32px;
+}
+
+#contextWrapper li a:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(160deg, #C4E538 0%, #009432 60%);
+    border:0px;
+    cursor: pointer;
+}
+
+#contextWrapper li a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: #000000;
+    padding-right: 16px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+#contextWrapper{
+  text-indent: 16px;
+  min-width: 183px;
+  position: absolute;
+  border-radius: 0 8px 8px 8px;
+  background: #fff;
+  box-shadow: 0 0 20px #000;
+  list-style: none;
+}
+
 #log-wrapper{
     background: #282f31;
     z-index: 4;
     width: 600px;
     height: 680px;
+    padding: 32px;
+    border-radius: 16px;
+    position: absolute;
+    top: 160px;
+    left: 700px;
+}
+
+#createtravel-wrapper{
+    background: #282f31;
+    z-index: 4;
+    width: 600px;
+    height: 260px;
     padding: 32px;
     border-radius: 16px;
     position: absolute;
